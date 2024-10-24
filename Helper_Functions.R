@@ -21,7 +21,8 @@ convert_tz_date <- function(data, col_name, include_month = FALSE,
 
 # 2.   gets nomenclatures ----
 # returns a dataframe with nomenclature id and label
-get_nomenclature <- function(nomenclature_name, country = "sp", 
+
+get_nomenclature <- function(nomenclature_name, country = "ro", 
                              type = "label") {
   
   setwd("\\\\192.168.2.30\\Analyses\\Shared\\Nomenclatures\\")
