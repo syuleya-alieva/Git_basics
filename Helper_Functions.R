@@ -102,7 +102,8 @@ format_write_xlsx_multiple_sheets <- function(df_list, sheet_names, file_name) {
       max_val_length <- if (all(is.na(x))) NA else min(max(char_lengths, 
                                                            na.rm = TRUE), 45)
       max_length <- max(max_val_length, nchar(names(df)))
-      return(min(max_length + 5, 50))
+      # change the cell width to max_length + 3 & max 50
+      return(min(max_length + 3, 50))
     }))
     
     # Add worksheet and write data
