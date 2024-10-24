@@ -20,7 +20,6 @@ convert_tz_date <- function(data, col_name, include_month = FALSE,
 # data <- convert_tz_date(data, "created_at")
 
 # 2.   gets nomenclatures ----
-
 # returns a dataframe with nomenclature id and label
 get_nomenclature <- function(nomenclature_name, country = "bg", 
                              type = "label") {
@@ -140,6 +139,7 @@ get_preferred_phones <- function(df, con) {
   
   df$preferred_phone <- phones$number[match(df$client_id, 
                                             phones$client_id)]
+  print("Git feature 1!!")
   
   return(df)
 }
