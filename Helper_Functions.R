@@ -141,10 +141,13 @@ get_preferred_phones <- function(df, con) {
   
   df$preferred_phone <- phones$number[match(df$client_id, 
                                             phones$client_id)]
-  print("Git feature 1!!")
+  print("Git feature 1!! ")
   
   return(df)
 }
 
+
 # Example usage:
 # data <- get_preferred_phones(data, con)
+
+# 5. Make changes to branch 2 and leave it for PR
