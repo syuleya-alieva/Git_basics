@@ -151,3 +151,5 @@ get_preferred_phones <- function(df, con) {
 # data <- get_preferred_phones(data, con)
 
 # 5. Make changes to branch 2 and leave it for PR
+
+# 6. Make changes to branch 2.1. and leave it for PR
